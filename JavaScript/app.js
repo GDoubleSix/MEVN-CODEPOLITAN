@@ -247,3 +247,36 @@ penutup while*/
 // const hasil = function(a,b){
 //     return a*b;
 // };
+
+
+//ForEach
+//dapat menggunakan callback function yang berarti dapat memanggil sebuah fungsi sebanyak jumlah element yang dimiliki array
+
+//contoh
+// const numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// numbers.forEach(function(number){
+//     if(number %2 === 0){
+//         console.log(number);
+//     }
+// }); 
+
+const animes = [
+    {
+        title : 'one piece',
+        rating : 90,
+    },
+    {
+        title : 'Attack on titan',
+        rating : 80,
+    },
+    {
+        title : 'Naruto',
+        rating : 90,
+    },
+    
+];
+
+animes.forEach(function(anime,i){
+        console.log(`${i + 1}. ${anime.title} ${anime.rating} / 100`);
+}); //Fungsi forEach dirancang khusus untuk menjalankan suatu tindakan pada setiap elemen array tanpa memerlukan loop for lagi. Saat Anda menggunakan forEach, Anda mendapatkan akses langsung ke setiap elemen array dan tidak perlu secara eksplisit mendeklarasikan atau mengatur indeks. sumber(chat gpt)

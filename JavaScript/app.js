@@ -261,22 +261,37 @@ penutup while*/
 //     }
 // }); 
 
-const animes = [
-    {
-        title : 'one piece',
-        rating : 90,
-    },
-    {
-        title : 'Attack on titan',
-        rating : 80,
-    },
-    {
-        title : 'Naruto',
-        rating : 90,
-    },
+// const animes = [
+//     {
+//         title : 'one piece',
+//         rating : 90,
+//     },
+//     {
+//         title : 'Attack on titan',
+//         rating : 80,
+//     },
+//     {
+//         title : 'Naruto',
+//         rating : 90,
+//     },
     
-];
+// ];
 
-animes.forEach(function(anime,i){
-        console.log(`${i + 1}. ${anime.title} ${anime.rating} / 100`);
-}); //Fungsi forEach dirancang khusus untuk menjalankan suatu tindakan pada setiap elemen array tanpa memerlukan loop for lagi. Saat Anda menggunakan forEach, Anda mendapatkan akses langsung ke setiap elemen array dan tidak perlu secara eksplisit mendeklarasikan atau mengatur indeks. sumber(chat gpt)
+// animes.forEach(function(anime,i){
+//         console.log(`${i + 1}. ${anime.title} ${anime.rating} / 100`);
+// }); //Fungsi forEach dirancang khusus untuk menjalankan suatu tindakan pada setiap elemen array tanpa memerlukan loop for lagi. Saat Anda menggunakan forEach, Anda mendapatkan akses langsung ke setiap elemen array dan tidak perlu secara eksplisit mendeklarasikan atau mengatur indeks. sumber(chat gpt)
+
+
+//map
+//nilai balikknya array baru yang sudah dimodifikasi melalui callback function dari suatu array atau simplenya "Memanipulasi data yang sudah ada". jadi output dari map adalah array dan array yang memiliki nilai dan bisa saja berbeda dari sumber yang digunakan 
+
+//contoh
+const numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(`angka sebelum di berikan map ${numbers}`);
+
+const numbersx2 = numbers.map(function(number){
+    if(number %2 == 0){
+        number * 2;
+        console.log(`angka sesudah diberikan map ${number}`);
+    }
+})

@@ -286,12 +286,38 @@ penutup while*/
 //nilai balikknya array baru yang sudah dimodifikasi melalui callback function dari suatu array atau simplenya "Memanipulasi data yang sudah ada". jadi output dari map adalah array dan array yang memiliki nilai dan bisa saja berbeda dari sumber yang digunakan 
 
 //contoh
-const numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(`angka sebelum di berikan map ${numbers}`);
+// const numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(`angka sebelum di berikan map ${numbers}`);
 
-const numbersx2 = numbers.map(function(number){
-    if(number %2 == 0){
-        number * 2;
-        console.log(`angka sesudah diberikan map ${number}`);
-    }
-})
+// const numbersx2 = numbers.map(function(number){
+//     if(number %2 == 0){
+//         number * 2;
+//         console.log(`angka sesudah diberikan map ${number}`);
+//     }
+// })
+
+
+//arrow function
+
+// const perpangkatan = function(x){ //ini function biasa
+//     return x * x;
+// }
+
+// console.log = perpangkatan(5);
+
+// const perpangkatan = (x) =>{ //ini arrow function menggunakan parameter
+//     return x * x;
+//}
+
+// const random = () =>{ //ini arrow function tanpa parameter
+//     return Math.floor(Math.random() * 1000);
+// }
+
+
+//implisit return dari arrow function
+//jika perintah hanya 1 baris saja kita tidak harus menggunakan return namun tanda{} diganti dengan ()
+//contoh :
+// const random = () => ( 
+//      Math.floor(Math.random() * 1000)
+// );//
+

@@ -321,3 +321,12 @@ penutup while*/
 //      Math.floor(Math.random() * 1000)
 // );//
 
+
+//setTimeout & setInterval
+//callback function yang bukan berasal dari array. Fungsinya untuk memberikan waktu jedah dan melakukan perulangan setiap waktu yang ditentukan. Kedua function berkaitan dengan waktu dengan satuan milisecond
+
+// contoh
+console.log('haloo..');
+setTimeout(() =>{
+    console.log('ini siapa ya..?')
+}, 10000 );

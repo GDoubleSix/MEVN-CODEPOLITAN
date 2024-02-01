@@ -326,7 +326,12 @@ penutup while*/
 //callback function yang bukan berasal dari array. Fungsinya untuk memberikan waktu jedah dan melakukan perulangan setiap waktu yang ditentukan. Kedua function berkaitan dengan waktu dengan satuan milisecond
 
 // contoh
-console.log('haloo..');
-setTimeout(() =>{
-    console.log('ini siapa ya..?')
-}, 10000 );
+//1.setTimeout
+// console.log('haloo..'); //simplenya setTimeout() 
+// setTimeout(() =>{
+//     console.log('ini siapa ya..?')
+// }, 10000 );
+
+const interval = setInterval(() =>{
+    console.log (Math.random(Math.floor()));
+},2000);

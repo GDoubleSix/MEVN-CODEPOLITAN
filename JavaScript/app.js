@@ -350,6 +350,40 @@ penutup while*/
 // });
 
 
+// const animes = [
+//     {
+//         title : 'one piece',
+//         rating : 90,
+//     },
+//     {
+//         title : 'Attack on titan',
+//         rating : 80,
+//     },
+//     {
+//         title : 'Naruto',
+//         rating : 90,
+//     },
+    
+// ];
+
+// const anime = animes.filter(anime => anime.rating > 80)
+// const judulAnimeBagus = animes.filter(judulAnimeBagus => judulAnimeBagus.title);
+//filter baisa digunakan untuk memilih sesuatu berdasarkan yang kita mau
+
+///
+
+//every
+//Akan mengenmablikan nilai bolean true pada suatu array memiliki kriteria yang sama. False jika salah satu nilai tidak memiliki nilai yang sama
+
+//contoh
+const nilai = [80, 85, 89, 90, 98];
+const lulus = nilai.every((score) =>
+    score >= 75,
+); // semua nilai harus benar, disini kondisinya true karena semua nilai lebih besar dari 75
+
+
+//some
+// jika every semua nilai harus benar, some hanya salah satu benar maka akan di balikkan nilai bolean true
 const animes = [
     {
         title : 'one piece',
@@ -366,5 +400,6 @@ const animes = [
     
 ];
 
-const anime = animes.filter(anime => anime.rating > 80)
-const judulAnimeBagus = animes.filter(judulAnimeBagus => judulAnimeBagus.title);
+const animeRating = animes.some((rat) =>
+    rat.rating === 80,
+);

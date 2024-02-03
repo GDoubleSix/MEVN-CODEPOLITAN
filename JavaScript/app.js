@@ -376,30 +376,69 @@ penutup while*/
 //Akan mengenmablikan nilai bolean true pada suatu array memiliki kriteria yang sama. False jika salah satu nilai tidak memiliki nilai yang sama
 
 //contoh
-const nilai = [80, 85, 89, 90, 98];
-const lulus = nilai.every((score) =>
-    score >= 75,
-); // semua nilai harus benar, disini kondisinya true karena semua nilai lebih besar dari 75
+// const nilai = [80, 85, 89, 90, 98];
+// const lulus = nilai.every((score) =>
+//     score >= 75,
+// ); // semua nilai harus benar, disini kondisinya true karena semua nilai lebih besar dari 75
 
 
 //some
 // jika every semua nilai harus benar, some hanya salah satu benar maka akan di balikkan nilai bolean true
-const animes = [
-    {
-        title : 'one piece',
-        rating : 90,
-    },
-    {
-        title : 'Attack on titan',
-        rating : 80,
-    },
-    {
-        title : 'Naruto',
-        rating : 90,
-    },
+// const animes = [
+//     {
+//         title : 'one piece',
+//         rating : 90,
+//     },
+//     {
+//         title : 'Attack on titan',
+//         rating : 80,
+//     },
+//     {
+//         title : 'Naruto',
+//         rating : 90,
+//     },
     
-];
+// ];
 
-const animeRating = animes.some((rat) =>
-    rat.rating === 80,
-);
+// const animeRating = animes.some((rat) =>
+//     rat.rating === 80,
+// );
+
+//reduce
+//melakukan proses seperti - + maupun % pada elemen array dan nilai yang di return adalah single value atau satu nilai
+const nilai = [80, 85, 89, 90, 98];
+
+const totalNilai = nilai.reduce((curentTotal, subTotal) =>{
+    return curentTotal + subTotal
+}); //cara baca : totalNilai sama dengan nilai yang di reduce dari curentTotal dan subTOtal. kembalikan nilai curentTotal + subTotal.
+// curentTotal = 80
+// subtotal = 85
+// 80 + 85 = 165, 165 balik lagi menjadi curentTotal dan ditambahkan lagi pada niai yang belum dimasukkan / 89
+
+// const animes = [
+//     {
+//         title : 'one piece',
+//         rating : 92,
+//     },
+//     {
+//         title : 'Attack on titan',
+//         rating : 80,
+//     },
+//     {
+//         title : 'Naruto',
+//         rating : 85,
+//     },
+//     {
+//         title : 'Boruto',
+//         rating : 82,
+//     },
+        
+// ];
+
+// const bestAnime = animes.reduce((bestAnime, currAnime) =>{
+//     console.log(bestAnime, currAnime)
+//     if(currAnime.rating > bestAnime.rating){ //jika currAnime lebih besar dari bestAnime maka kembalikan nilai currAnime
+//         return currAnime; //mengganti currAnime pada nilai yang lebih tinggi, dan nilai yang lebih rendah akan ditinggalkan
+//     }
+//     return bestAnime;
+// }) //intinya disini mencari rating anime paling tinggi dengan cara membandingkan satu persatu. reduce juga bisa untuk menambahkan total belanja walaupun ada discount karena dihitung 1 / 1

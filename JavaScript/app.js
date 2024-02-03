@@ -332,6 +332,39 @@ penutup while*/
 //     console.log('ini siapa ya..?')
 // }, 10000 );
 
-const interval = setInterval(() =>{
-    console.log (Math.random(Math.floor()));
-},2000);
+
+//setInterval
+// const interval = setInterval(() =>{
+//     console.log (Math.random(Math.floor()));
+// },2000);
+
+//////
+
+//fileter atau pilih
+//Function yang akan mengembalikan nilai array lagi yang sudah dimanipulasi sesuai dengan kriteria yang ditetapkan
+
+// const numbers=[1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const angkaBaru = numbers.filter((n) =>{
+//     return n > 5;
+// });
+
+
+const animes = [
+    {
+        title : 'one piece',
+        rating : 90,
+    },
+    {
+        title : 'Attack on titan',
+        rating : 80,
+    },
+    {
+        title : 'Naruto',
+        rating : 90,
+    },
+    
+];
+
+const anime = animes.filter(anime => anime.rating > 80)
+const judulAnimeBagus = animes.filter(judulAnimeBagus => judulAnimeBagus.title);

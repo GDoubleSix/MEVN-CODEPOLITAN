@@ -476,3 +476,37 @@
 // function gabung(){
 //     console.log(...angka , ...nama);
 // } //dapat memanipulasi suatu array tanpa mengubah nilai aslinya dan juga dapat menggabungkan banyak array menjadi 1 array
+
+/////
+//spreed operator di dalam object menggunakan 
+//penjelasan dan contoh sama saja dengan spreed operator di atas, namun saya akan tetap membuat contohnya
+
+const user = {
+    nama : 'user',
+    email : 'user@gg.com',
+};
+
+const crudential = {
+    password : 'password',
+    token : '123jkljhlkh123@kljh23',
+};
+
+const gabungan = {
+    ...user,
+    ...crudential,
+};
+
+//////////
+
+//rest parameters
+// Sintaks parameter sisanya memungkinkan suatu fungsi menerima argumen dalam jumlah tak terbatas sebagai sebuah array, sehingga menyediakan cara untuk merepresentasikan fungsi variadik
+
+//contoh
+
+// const peserta = ['Darna','Gewa','Muamar','Farhan','Nazrul'];
+// const juara = (emas, perak, perunggu, ...pesertaLain) =>{//..pesertaLain untuk memanggil sisa dari peserta
+//     console.log(`Peraih Medali Emas ${emas}`);
+//     console.log(`Peraih Medali Perak ${perak}`);
+//     console.log(`Peraih Medali Perunggu ${perunggu}`);
+//     console.log(`Seluruh peserta ${pesertaLain}`);
+// }

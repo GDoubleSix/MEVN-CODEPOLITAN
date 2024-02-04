@@ -450,10 +450,21 @@
 
 //contoh
 
-function dadu (sisi = 6){ //sisi dadu otomatis akan terisi dengan nilai 6
-    return Math.floor(Math.random() * sisi) +1;
-}
+// function dadu (sisi = 6){ //sisi dadu otomatis akan terisi dengan nilai 6
+//     return Math.floor(Math.random() * sisi) +1;
+// }
 
-function sapa(user = 'gewa',selamat = 'selamat ngoding'){
-    console.log(`${user} ${selamat}`);
-}
+// function sapa(user = 'gewa',selamat = 'selamat ngoding'){
+//     console.log(`${user} ${selamat}`);
+// }
+
+///////
+
+//spreed operator pada function
+//mengubah suatu array atau object atau string menjadi suatu deret parameter untuk function
+
+//contoh
+
+// const angka = [1, 2, 3, 4, 5];
+// Math.max(angka);//Not A Number (NaN)
+// Math.max(...angka);//5

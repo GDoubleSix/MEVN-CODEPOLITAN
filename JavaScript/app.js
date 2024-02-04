@@ -481,20 +481,20 @@
 //spreed operator di dalam object menggunakan 
 //penjelasan dan contoh sama saja dengan spreed operator di atas, namun saya akan tetap membuat contohnya
 
-const user = {
-    nama : 'user',
-    email : 'user@gg.com',
-};
+// const user = {
+//     nama : 'user',
+//     email : 'user@gg.com',
+// };
 
-const crudential = {
-    password : 'password',
-    token : '123jkljhlkh123@kljh23',
-};
+// const crudential = {
+//     password : 'password',
+//     token : '123jkljhlkh123@kljh23',
+// };
 
-const gabungan = {
-    ...user,
-    ...crudential,
-};
+// const gabungan = {
+//     ...user,
+//     ...crudential,
+// };
 
 //////////
 
@@ -510,3 +510,58 @@ const gabungan = {
 //     console.log(`Peraih Medali Perunggu ${perunggu}`);
 //     console.log(`Seluruh peserta ${pesertaLain}`);
 // }
+
+//////
+
+//destructing
+
+//pada array
+// const peserta = ['Darna','Gewa','Muamar','Farhan','Nazrul'];
+// const [emas, perak, perunggu, ...pendaftar] = peserta;
+
+// //pada object
+// const user = {
+//     nama : 'user',
+//     email : 'user@gg.com',
+// };
+
+// const crudential = {
+//     password : 'password',
+//     token : '123jkljhlkh123@kljh23',
+// };
+
+// const {nama, email} = user;
+
+
+//di dalam function
+const user = {
+    nama : 'user',
+    email : 'user@gg.com',
+    role : 'Admin',
+};
+const userAndRole = ({nama,role}) =>{
+    return `${nama}, ${role}`;
+};
+
+const animes = [
+    {
+        title : 'one piece',
+        rating : 90,
+        year : 1999,
+    },
+    {
+        title : 'Attack on titan',
+        rating : 80,
+        year : 2008,
+    },
+    {
+        title : 'Naruto',
+        rating : 90,
+        year : 2006,
+    },
+    
+];
+
+const anime = animes.map(({title, rating, year}) =>{
+    return `${title} (${year}) ${rating}`;
+});

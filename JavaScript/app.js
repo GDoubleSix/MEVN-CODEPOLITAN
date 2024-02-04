@@ -468,3 +468,11 @@
 // const angka = [1, 2, 3, 4, 5];
 // Math.max(angka);//Not A Number (NaN)
 // Math.max(...angka);//5
+
+//merge array dengan spreed operator
+
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const nama = ['Darna','Gewa','Muamar','Farhan','Nazrul'];
+// function gabung(){
+//     console.log(...angka , ...nama);
+// } //dapat memanipulasi suatu array tanpa mengubah nilai aslinya dan juga dapat menggabungkan banyak array menjadi 1 array

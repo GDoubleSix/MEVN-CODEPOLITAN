@@ -442,3 +442,18 @@
 //     }
 //     return bestAnime;
 // }) //intinya disini mencari rating anime paling tinggi dengan cara membandingkan satu persatu. reduce juga bisa untuk menambahkan total belanja walaupun ada discount karena dihitung 1 / 1
+
+//////
+
+//default value parameter *Mengatur default value pada function
+//Nilai yang digunakan saat fungsi dipanggil tapi tidak dapat diberi nilai argument yang diperlukan
+
+//contoh
+
+function dadu (sisi = 6){ //sisi dadu otomatis akan terisi dengan nilai 6
+    return Math.floor(Math.random() * sisi) +1;
+}
+
+function sapa(user = 'gewa',selamat = 'selamat ngoding'){
+    console.log(`${user} ${selamat}`);
+}
